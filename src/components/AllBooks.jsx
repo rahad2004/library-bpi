@@ -1,7 +1,7 @@
 // app/books/page.js (Server Component)
 import BooksFilterFrom from "@/components/BooksFilterFrom";
-import BookPagination from "./BookPagination";
 import Link from "next/link";
+import BookPagination from "./BookPagination";
 
 export default async function AllBooks({ searchParams }) {
   const filters = {
@@ -101,7 +101,7 @@ export default async function AllBooks({ searchParams }) {
   );
 }
 
-// lib/api.js
+
 async function getAllBooks(filters = {}) {
   const params = new URLSearchParams();
 
